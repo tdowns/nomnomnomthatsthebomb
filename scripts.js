@@ -24,7 +24,29 @@ $(document).ready(function () {
         carouselImages.eq(carouselIndex).fadeIn(1000);
     }
 
-    setInterval(changeCarouselImage, 4500); // Change image every 3 seconds
+       setInterval(changeCarouselImage, 4500); // Change image every 3 seconds
+
+    // Search functionality
+    document.getElementById('searchInput').addEventListener('input', (event) => {
+      const filter = event.target.value.toLowerCase();
+      const table = document.getElementById('moabs-table');
+      const rows = table.tBodies[0].rows;
+
+      for (let i = 0; i < rows.length; i++) {
+        const cells = rows[i].cells;
+        let shouldShowRow = false;
+
+        for (let j = 0; j < cells.length; j++) {
+          if (cells[j].innerText.toLowerCase().indexOf(filter) > -1) {
+            shouldShowRow = true;
+            break;
+          }
+        }
+
+        rows[i].style.display = shouldShowRow ? '' : 'none';
+      }
+    });
+
 });
 
 function updateActiveNavLink() {
@@ -56,23 +78,3 @@ function updateActiveNavLink() {
 
 // Call the function to update the active navigation link
 updateActiveNavLink();
-
-document.getElementById('searchInput').addEventListener('input', (event) => {
-  const filter = event.target.value.toLowerCase();
-  const table = document.getElementById('moabs-table');
-  const rows = table.tBodies[0].rows;
-
-  for (let i = 0; i < rows.length; i++) {
-    const cells = rows[i].cells;
-    let shouldShowRow = false;
-
-    for (let j = 0; j < cells.length; j++) {
-      if (cells[j].innerText.toLowerCase().indexOf(filter) > -1) {
-        shouldShowRow = true;
-        break;
-      }
-    }
-
-    rows[i].style.display = shouldShowRow ? '' : 'none';
-  }
-});
