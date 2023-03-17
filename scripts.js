@@ -57,28 +57,6 @@ function updateActiveNavLink() {
 // Call the function to update the active navigation link
 updateActiveNavLink();
 
-// Add this code to your scripts.js file
-function sortTable(columnIndex) {
-  const table = document.getElementById('moabsTable');
-  const tbody = table.tBodies[0];
-  const rows = Array.from(tbody.rows);
-
-  rows.sort((a, b) => {
-    const columnA = a.cells[columnIndex].innerText.toLowerCase();
-    const columnB = b.cells[columnIndex].innerText.toLowerCase();
-
-    if (columnA < columnB) {
-      return -1;
-    }
-    if (columnA > columnB) {
-      return 1;
-    }
-    return 0;
-  });
-
-  rows.forEach(row => tbody.appendChild(row));
-}
-
 document.getElementById('searchInput').addEventListener('input', (event) => {
   const filter = event.target.value.toLowerCase();
   const table = document.getElementById('moabsTable');
