@@ -3,9 +3,9 @@ $(document).ready(function () {
     const carouselImages = $(".carousel-image");
 
     function changeCarouselImage() {
-        carouselImages.eq(carouselIndex).fadeOut(1000);
+        carouselImages.eq(carouselIndex).css("display", "none");
         carouselIndex = (carouselIndex + 1) % carouselImages.length;
-        carouselImages.eq(carouselIndex).fadeIn(1000);
+        carouselImages.eq(carouselIndex).css("display", "block");
     }
 
     setInterval(changeCarouselImage, 5000); // Change image every 5 seconds
