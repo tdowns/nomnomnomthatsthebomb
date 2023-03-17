@@ -41,8 +41,8 @@ function updateActiveNavLink() {
         case 'recipes.html':
             activeLink = 'recipes-link';
             break;
-        case 'food-diary.html':
-            activeLink = 'food-diary-link';
+        case 'diary.html':
+            activeLink = 'diary-link';
             break;
         case 'moabs.html':
             activeLink = 'moabs-link';
