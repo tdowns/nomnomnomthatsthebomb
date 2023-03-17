@@ -8,7 +8,7 @@ $(document).ready(function () {
         carouselImages.eq(carouselIndex).fadeIn(1000);
     }
 
-    setInterval(changeCarouselImage, 3000); // Change image every 3 seconds
+    setInterval(changeCarouselImage, 4500); // Change image every 3 seconds
 });
 
 function updateActiveNavLink() {
