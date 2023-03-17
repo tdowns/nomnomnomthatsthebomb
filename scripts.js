@@ -59,7 +59,7 @@ updateActiveNavLink();
 
 document.getElementById('searchInput').addEventListener('input', (event) => {
   const filter = event.target.value.toLowerCase();
-  const table = document.getElementById('moabsTable');
+  const table = document.getElementById('moabs-table');
   const rows = table.tBodies[0].rows;
 
   for (let i = 0; i < rows.length; i++) {
