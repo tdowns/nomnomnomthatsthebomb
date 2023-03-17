@@ -10,3 +10,27 @@ $(document).ready(function () {
 
     setInterval(changeCarouselImage, 5000); // Change image every 5 seconds
 });
+
+function updateActiveNavLink() {
+    const currentPage = window.location.pathname.split('/').pop();
+    let activeLink;
+
+    switch (currentPage) {
+        case 'index.html':
+            activeLink = 'home-link';
+            break;
+        case 'recipes.html':
+            activeLink = 'recipes-link';
+            break;
+        case 'food-diary.html':
+            activeLink = 'food-diary-link';
+            break;
+        default:
+            activeLink = 'home-link';
+    }
+
+    document.getElementById(activeLink).textContent += " 🍴";
+}
+
+// Call the function to update the active navigation link
+updateActiveNavLink();
