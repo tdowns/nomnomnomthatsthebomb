@@ -57,3 +57,7 @@ nav a:hover {
 .carousel-image:first-child {
     display: block;
 }
+
+.carousel-image-active {
+    display: block !important;
+}
