@@ -44,6 +44,9 @@ function updateActiveNavLink() {
         case 'food-diary.html':
             activeLink = 'food-diary-link';
             break;
+        case 'moabs.html':
+            activeLink = 'moabs-link';
+            break;
         default:
             activeLink = 'home-link';
     }
