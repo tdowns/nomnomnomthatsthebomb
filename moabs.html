@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js" defer></script>
+    <title>Nom nom nom, that's the 💣</title>
+</head>
+<body>
+    <header>
+        <h1>Nom nom nom, that's the 💣</h1>
+        <h2>Delicious food and explosive flavors that blow your taste buds away</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" id="home-link">Home</a></li>
+            <li><a href="poetry.html" id="poetry-link">Poetry</a></li>
+            <li><a href="recipes.html" id="recipes-link">Recipes</a></li>
+            <li><a href="food-diary.html" id="food-diary-link">Food Diary</a></li>
+            <li><a href="moabs.html" id="moabs-link">MOABs</a></li>
+        </ul>
+    </nav>
+    <div class="page-container">
+        <div class="main-content">
+            <!-- Add this code within the "main-content" div -->
+            <h3 class="table-title">Mother of All Bombs (MOABs) - The Best Menu Items</h3>
+            <input type="text" id="searchInput" placeholder="Search...">
+            <table id="moabsTable">
+              <thead>
+                <tr>
+                  <th onclick="sortTable(0)">Item</th>
+                  <th onclick="sortTable(1)">City</th>
+                  <th onclick="sortTable(2)">Restaurant Name</th>
+                  <th onclick="sortTable(4)">Contributor</th>
+                  <th onclick="sortTable(5)">Review</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Add your table data here -->
+                <tr>
+                  <td>Example Dish</td>
+                  <td>Example City</td>
+                  <td>Example Restaurant</td>
+                  <td>Example Contributor</td>
+                  <td>Example Review</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Title/descriptor for table of the best menu items -->
+            <!-- Sortable and filterable table with the columns "Item", "City", "Restaurant Name", "Review" -->
+        </div>
+    </div>
+</body>
+</html>

@@ -146,3 +146,41 @@ article p {
         max-height: 50vh;
     }
 }
+
+
+/* Add these styles to your styles.css file for the table */
+.table-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+#searchInput {
+  display: block;
+  margin: 1rem auto;
+  width: 80%;
+  max-width: 300px;
+  padding: 0.5rem;
+}
+
+table {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1000px;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #333;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f06c61;
+  color: white;
+  cursor: pointer;
+}
