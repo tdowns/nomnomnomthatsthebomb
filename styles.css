@@ -184,3 +184,15 @@ th {
   color: white;
   cursor: pointer;
 }
+
+/* Add styles for the table container */
+.table-container {
+  overflow-x: auto; /* Enable horizontal scrolling when the content overflows */
+  width: 100%; /* Set the container width to 100% */
+}
+
+/* Add styles for the table */
+#moabs-table {
+  width: 100%; /* Set the table width to 100% */
+  border-collapse: collapse; /* Collapse the table borders */
+}
