@@ -1,3 +1,19 @@
+function loadNavbar() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState === 4 && this.status === 200) {
+      document.getElementById("navbar-placeholder").innerHTML = this.responseText;
+      updateActiveNavLink();
+    }
+  };
+  xhttp.open("GET", "navbar.html", true);
+  xhttp.send();
+}
+
+// Call the function to load the navbar
+loadNavbar();
+
+
 $(document).ready(function () {
     let carouselIndex = 0;
     const carouselImages = $(".carousel-image");
