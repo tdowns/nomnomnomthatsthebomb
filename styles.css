@@ -89,12 +89,8 @@ nav a:hover {
         padding: 10px 12px;
     }
 
-    .carousel {
-        max-height: 50vh; /* Limit carousel height on smaller screens */
-    }
-
     .carousel-image {
         object-fit: cover; /* Resize images to fit the carousel */
-        max-height: 100%;
+        max-height: 50vh;
     }
 }
