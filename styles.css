@@ -52,6 +52,26 @@ nav a:hover {
     color: black;
 }
 
+/* add styles for the poem content */
+
+article {
+    text-align: center;
+    line-height: 1.4;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+article p {
+    margin-bottom: 1.5rem;
+}
+
+
 .carousel {
     position: relative;
     width: 100%;
@@ -98,6 +118,8 @@ nav a:hover {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+
 
 
 /* Mobile Responsiveness */

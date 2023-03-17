@@ -8,7 +8,7 @@ $(document).ready(function () {
         carouselImages.eq(carouselIndex).fadeIn(1000);
     }
 
-    setInterval(changeCarouselImage, 5000); // Change image every 5 seconds
+    setInterval(changeCarouselImage, 3000); // Change image every 3 seconds
 });
 
 function updateActiveNavLink() {
@@ -18,6 +18,9 @@ function updateActiveNavLink() {
     switch (currentPage) {
         case 'index.html':
             activeLink = 'home-link';
+            break;
+        case 'poetry.html':
+            activeLink = 'poetry-link';
             break;
         case 'recipes.html':
             activeLink = 'recipes-link';
